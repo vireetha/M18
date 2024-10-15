@@ -1,8 +1,10 @@
-n = int(input("Enter the value of n: "))
+num = int(input("Enter any number\n"))
 
 
-print ("numbers from {0} to {1} are: ".format(n,1))
+count = 0
 
- 
-for i in range(n,0,-1):
-	print (i)
+while num != 0:
+  count+=1
+  num=num//10
+
+print(count)
